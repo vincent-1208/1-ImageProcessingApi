@@ -1,0 +1,42 @@
+{
+  "name": "image_processing",
+  "version": "1.0.0",
+  "description": "Process Image",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "npm run build && nodemon build/server.js",
+    "lint": "eslint './src/**/*.ts'",
+    "prettier": "prettier --config .prettierrc './src/**/*.ts' --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "^4.3.1",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.1",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "ejs": "^3.1.9",
+    "eslint": "^8.49.0",
+    "html": "^1.0.0",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lint": "^0.8.19",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sharp": "^0.32.5"
+  }
+}
